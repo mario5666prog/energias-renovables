@@ -1,1 +1,174 @@
-https://mario5666prog.github.io/energias-renovables/
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energías Renovables</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+    <header class="bg-white dark:bg-gray-800 shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center flex-wrap gap-4">
+            <div class="flex items-center gap-4 flex-shrink-0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_UNE.svg/1200px-Logo_UNE.svg.png" alt="Logo UNE" class="h-12">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Escudo_de_Tamaulipas.svg/1200px-Escudo_de_Tamaulipas.svg.png" alt="Logo Tamaulipas" class="h-12">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/SEP_logo_2021.svg/1200px-SEP_logo_2021.svg.png" alt="Logo Secretaría de Educación" class="h-12">
+            </div>
+            <h1 class="text-2xl font-bold text-gray-800 dark:text-white flex-grow text-center">Energías Renovables</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <section class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Login</h2>
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label for="password" class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-50 dark:bg-gray-800">
+                    <p id="error-message" class="text-red-500 text-xs italic" style="display: none;">Contraseña incorrecta</p>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-blue-600 dark:hover:bg-blue-700">Entrar</button>
+            </form>
+        </section>
+
+        <section id="presentation-content" class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 space-y-6" style="display: none;">
+            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Propuesta de Presentación del Prototipo</h2>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">a. Hoja de presentación</h3>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+                <li>Nombre del proyecto: Energías Renovables para un Futuro Sostenible</li>
+                <li>Institución: Universidad del Noreste</li>
+                <li>Participantes: García Silva Mario Rafael</li>
+                <li>Área de participación: Desarrollo Sostenible, Energías Renovables</li>
+                <li>Fecha: 20/03/25</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">b. Introducción</h3>
+            <p class="text-gray-700 dark:text-gray-300">
+                Las energías renovables son fuentes de energía limpias, inagotables y cada vez más competitivas. Se diferencian de los combustibles fósiles principalmente en su diversidad, abundancia y potencial de aprovechamiento en cualquier parte del planeta, pero sobre todo en que no producen gases de efecto invernadero –causa del cambio climático– ni emisiones contaminantes.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">c. Planteamiento del problema</h3>
+            <p class="text-gray-700 dark:text-gray-300">
+                El uso de combustibles fósiles para la generación de energía es una de las principales causas del cambio climático y la contaminación del aire. Esto plantea la necesidad urgente de transitar hacia fuentes de energía más limpias y sostenibles.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">d. Desarrollo</h3>
+            <ul class="list-disc list-inside space-y-4">
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">i. Objetivos</h4>
+                    <ul class="list-disc list-inside">
+                        <li class="text-gray-700 dark:text-gray-300">General: Promover el uso de energías renovables como alternativa a los combustibles fósiles.</li>
+                        <li class="text-gray-700 dark:text-gray-300">Específico: Diseñar un prototipo de sistema de energía renovable para [aplicación específica].</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">ii. Impactos ambientales</h4>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        La adopción de energías renovables reduce significativamente las emisiones de gases de efecto invernadero, disminuyendo así el impacto en el cambio climático. Además, contribuye a la conservación de los recursos naturales y la reducción de la contaminación del aire y del agua.
+                    </p>
+                </li>
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">iii. Sustentabilidad</h4>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Las energías renovables son por definición sostenibles, ya que se basan en recursos naturales que se regeneran constantemente, como la luz solar, el viento y el agua. Su uso contribuye a un modelo energético más sostenible y respetuoso con el medio ambiente.
+                    </p>
+                </li>
+                <li>
+                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">iv. Desarrollo tecnológico generado (innovación)</h4>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        El desarrollo de tecnologías de energías renovables impulsa la innovación en diversos campos, como la ciencia de los materiales, la electrónica y la ingeniería. Esto genera nuevas oportunidades de desarrollo económico y social.
+                    </p>
+                </li>
+                 <li>
+                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">v. Beneficiarios</h4>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Los principales beneficiarios de este proyecto son:
+                         <ul class="list-disc list-inside">
+                            <li class="text-gray-700 dark:text-gray-300">La comunidad en general, al reducir la contaminación y el cambio climático.</li>
+                            <li class="text-gray-700 dark:text-gray-300">Las futuras generaciones, al heredar un planeta más saludable.</li>
+                            <li class="text-gray-700 dark:text-gray-300">Las empresas y los gobiernos, al reducir la dependencia de los combustibles fósiles.</li>
+                         </ul>
+                    </p>
+                </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">e. Resultados</h3>
+            <p class="text-gray-700 dark:text-gray-300">
+                Se espera obtener un prototipo funcional de [sistema de energía renovable] que demuestre la viabilidad y los beneficios de esta tecnología. Además, se busca generar conciencia sobre la importancia de las energías renovables y su potencial para transformar el futuro energético.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">f. Conclusiones</h3>
+            <p class="text-gray-700 dark:text-gray-300">
+                Las energías renovables son una solución fundamental para enfrentar los desafíos del cambio climático y la seguridad energética. Su desarrollo y adopción masiva son esenciales para construir un futuro sostenible y próspero para todos.
+            </p>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">g. Bibliografía</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li class="text-gray-700 dark:text-gray-300">
+                    <a href="https://www.un.org/es/climatechange/what-is-renewable-energy" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">
+                        ¿Qué son las energías renovables? | Naciones Unidas
+                    </a>
+                </li>
+                <li class="text-gray-700 dark:text-gray-300">
+                    <a href="https://www.irena.org/renewableenergy" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">
+                       Renewable Energy | International Renewable Energy Agency (IRENA)
+                    </a>
+                </li>
+                 <li class="text-gray-700 dark:text-gray-300">
+                    <a href="https://www.ecoticias.com/actualidad/2191912/10-razones-favor-energias-renovables" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">
+                        10 razones a favor de las energías renovables
+                    </a>
+                </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">h. Anexos</h3>
+            <p class="text-gray-700 dark:text-gray-300">
+                [Se incluirán diagramas, tablas y otros materiales complementarios que detallen el prototipo y los resultados del proyecto.]
+            </p>
+             <section class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-600">
+                <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Enlaces de Interés</h2>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="https://www.gob.mx/semarnat" target="_blank" rel="noopener noreferrer" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-green-600 dark:hover:bg-green-700">SEMARNAT</a>
+                    <a href="https://www.gob.mx/sener" target="_blank" rel="noopener noreferrer" class="bg-yellow-500 hover:bg-yellow-700 text-gray-900 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-yellow-400 dark:hover:bg-yellow-500">SENER</a>
+                    <a href="https://www.inecc.gob.mx/" target="_blank" rel="noopener noreferrer" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-blue-600 dark:hover:bg-blue-700">INECC</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 dark:bg-gray-800 py-4 mt-8">
+        <div class="container mx-auto text-center text-gray-600 dark:text-gray-400">
+            © 2024 Energías Renovables | Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const passwordInput = document.getElementById('password');
+        const errorMessage = document.getElementById('error-message');
+        const presentationContent = document.getElementById('presentation-content');
+
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const password = passwordInput.value;
+
+            if (password === 'mario123') {
+                errorMessage.style.display = 'none';
+                presentationContent.style.display = 'block';
+            } else {
+                errorMessage.style.display = 'block';
+                presentationContent.style.display = 'none';
+            }
+            passwordInput.value = '';
+        });
+    </script>
+</body>
+</html>
+
