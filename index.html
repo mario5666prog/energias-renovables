@@ -10,39 +10,34 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        .login-container {
-            background: linear-gradient(135deg, #6ee7b7, #3b82f6); /* Gradiente actual */
-        }
-        .login-form-container {
-             background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
-        }
-
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900">
     <header class="bg-white dark:bg-gray-800 shadow-md py-4">
         <div class="container mx-auto flex justify-between items-center flex-wrap gap-4">
-         
+            <div class="flex items-center gap-4 flex-shrink-0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_UNE.svg/1200px-Logo_UNE.svg.png" alt="Logo UNE" class="h-12">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Escudo_de_Tamaulipas.svg/1200px-Escudo_de_Tamaulipas.svg.png" alt="Logo Tamaulipas" class="h-12">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/SEP_logo_2021.svg/1200px-SEP_logo_2021.svg.png" alt="Logo Secretaría de Educación" class="h-12">
+            </div>
             <h1 class="text-2xl font-bold text-gray-800 dark:text-white flex-grow text-center">Energías Renovables</h1>
         </div>
     </header>
 
-    <main class="container mx-auto py-8 flex justify-center">
-        <section class="login-container flex justify-center items-center rounded-lg p-6 mb-8 w-full max-w-md">
-            <div class="login-form-container shadow-md rounded-lg p-6 w-full">
-                <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4 text-center">Login</h2>
-                <form id="login-form" class="space-y-4">
-                    <div>
-                        <label for="password" class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">Contraseña:</label>
-                        <input type="password" id="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-50 dark:bg-gray-800">
-                        <p id="error-message" class="text-red-500 text-xs italic text-center" style="display: none;">Contraseña incorrecta</p>
-                    </div>
-                    <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-blue-600 dark:hover:bg-blue-700">Entrar</button>
-                </form>
-            </div>
+    <main class="container mx-auto py-8">
+        <section id="login-section" class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Login</h2>
+            <form id="login-form" class="space-y-4">
+                <div>
+                    <label for="password" class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">Contraseña:</label>
+                    <input type="password" id="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-50 dark:bg-gray-800">
+                    <p id="error-message" class="text-red-500 text-xs italic" style="display: none;">Contraseña incorrecta</p>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline dark:bg-blue-600 dark:hover:bg-blue-700">Entrar</button>
+            </form>
         </section>
 
-        <section id="presentation-content" class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 space-y-6 w-full" style="display: none;">
+        <section id="presentation-content" class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 space-y-6" style="display: none;">
             <h2 class="text-2xl font-semibold text-gray-800 dark:text-white">Propuesta de Presentación del Prototipo</h2>
 
             <h3 class="text-xl font-semibold text-gray-800 dark:text-white">a. Hoja de presentación</h3>
@@ -158,6 +153,7 @@
         const loginForm = document.getElementById('login-form');
         const passwordInput = document.getElementById('password');
         const errorMessage = document.getElementById('error-message');
+        const loginSection = document.getElementById('login-section');
         const presentationContent = document.getElementById('presentation-content');
 
         loginForm.addEventListener('submit', (event) => {
@@ -166,17 +162,16 @@
 
             if (password === 'mario123') {
                 errorMessage.style.display = 'none';
+                loginSection.style.display = 'none';
                 presentationContent.style.display = 'block';
             } else {
                 errorMessage.style.display = 'block';
-                presentationContent.style.display = 'none';
             }
             passwordInput.value = '';
         });
     </script>
 </body>
 </html>
-
 
             
 
